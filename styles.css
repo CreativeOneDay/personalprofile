@@ -2,6 +2,17 @@
     font-family: 'Roboto', sans-serif; 
     box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    background: #000000;
+}
+
+h1, h2, h3, h4, h5, h6, p, caption, li, div {
+    color: white;
+    line-height: 150%;
+}
+
 .wrapper {
     width: 100%;
     margin: 2rem auto;
@@ -16,67 +27,13 @@
     margin: 0 auto;
   }
 
-  body {
-      margin: 0;
-      background: #000000;
-  }
-
-  h1, h2, h3, h4, h5, h6, p, caption, li, div {
-      color: white;
-      line-height: 150%;
-  }
-  .logo {
-      color: #83ffcd;
-  }
-  .hero-text {
-      margin-top: 20%;
-  }
-
-  .hero-text h1 {
-      font-size: 6em;
-      line-height: 100%;
-      font-weight: 900;
-      text-transform: uppercase;
-      margin: 0 4%;
-      color: rgba(255, 255, 255, 1);
-  }
-
-
-  .hero-text h1:nth-child(1) {
-    color: 
-}
-
-.hero-text h1:nth-child(2) {
-    color: 
-}
-
-.hero-text h1:nth-child(3) {
-   font-size: ;
-}
-  .hero-text h3 {
-      margin-top: 20%;
-  }
-
-/*************Header*************/
-
-
-.header {
-    grid-area: header;
-    min-height: 100vh;
- }
-
  /*************Navigation*************/
  .main-nav {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin: auto 4%;
-}
-
-.main-nav h1 {
-    font-size: 200%;
-    font-family: 'Roboto Mono', monospace;
+    margin: 2% 5%;
 }
 
 .main-nav ul {
@@ -93,28 +50,70 @@
 .section-links li {
     list-style-type: none;
 }
+  
+/*************Header*************/
+   .logo {
+    color: #83ffcd;
+}
 
- /*************Hero Text*************/
+.hero-text {
+    margin-top: 10%;
+    text-align: center;
+}
 
- .hero-text h1 {
+.hero-text h1 {
+    font-size: 16em;
     font-family: 'Roboto Mono', monospace;
+    line-height: 100%;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 4%;
+    color: rgba(255, 255, 255, 1);
 }
-    
+
+.hero-text h1:nth-child(1) {
+  color: 
+}
+
+.hero-text h1:nth-child(2) {
+  color: 
+}
+
+.hero-text h1:nth-child(3) {
+ font-size: ;
+}
 .hero-text h3 {
-    font-size: 120%;
-    line-height: 200%; 
-    font-family: 'Roboto', sans-serif;
+     margin-top: 20%;
+}
+
+.header {
+  grid-area: header;
+  min-height: 100vh;
+}
+
+
+/*************Manifesto*************/
+
+.human {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.manifesto {
+    margin: auto 5%;
+}
+
+.manifesto h3 {
+    font-size: 4em ;
+    font-family: 'Roboto Mono', monospace;
     font-weight: normal;
-}
-
-.hero-text strong {
-    border-bottom: 2px solid white;
-    font-weight: bolder;
+    line-height: 200%;
 }
 
 
-/*************cards *************/
-.designer, .education, .creativity, .about-me {
+
+/*************cards*************/
+.designer, .education, .creativity, .about-me { /*This are the sections*/
     margin: 5% 5% 0;   
     max-width: 100%;
 }
@@ -147,62 +146,6 @@ width: 100%;
     object-position: 0 0; /* positioned top left of the content box */
 }
 
-
-/*************Manifesto*************/
-
-.human {
-    min-height: 100vh;
-    width: 100%;
-}
-
-.manifesto-wrapper {
-    margin: auto 5%;
-    /*background: #F2994A;  /* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to top, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to top, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-
-.manifesto-card h2 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 4em ;
-}
-
-.manifesto-card h3 {
-    font-size: 4em ;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: normal;
-}
-
-.manifesto-image {
-    padding-top: 15%;
-    width: 100%;
-}
-
-.manifesto-image img {
-
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-
-
-.changemaker-background {
-    background-color:white;
-}
-
-.mail-background {
-    background-color: #fe5b8c;
-}
-
-.university-background {
-    background-color: #edfd74;
-}
-
 .read-more {
     text-align: center;
     display: block;
@@ -216,6 +159,9 @@ width: 100%;
     margin-top: 10%;
 }
 
+/*************Accordion*************/
+
+/*https://www.w3schools.com/howto/howto_js_accordion.asp*/
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
@@ -224,27 +170,28 @@ width: 100%;
     border: none;
     outline: none;
     transition: 0.4s;
-  }
+}
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
-    background-color: #83ffcd;
-    color: black;
-  }
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+background-color: #83ffcd;
+color: black;
+}
   
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 4px;
-    background-color: #83ffcd;
-    display: none;
-    overflow: hidden;
-    min-height: 85vh;
-  }
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+padding: 0 4px;
+background-color: #83ffcd;
+display: none;
+overflow: hidden;
+min-height: 85vh;
+}
 
 .panel p, .panel li {
-      color: white;
-      font-size: 0.3em !important;
-  }
+    color: white;
+    font-size: 0.3em !important;
+}
 
 .panel ul {
     margin-top: 0;
@@ -261,22 +208,27 @@ width: 100%;
 .section-intro h2, .section-intro p, .section-intro li {
     color: black;
 }
-  .accordion:after {
-    content: '+'; /* Unicode character for "plus" sign (+) */
-    color: #83ffcd;
-    font-weight: bold;
-    font-size: 0.8em;
-    margin-left: 5px;
-  }
+
+.accordion:after {
+content: "+"; /* Unicode character for "plus" sign (+) */
+width: 0.01em;
+height: 0.01em;
+color: #83ffcd;
+font-weight: bold;
+font-size: 0.8em;
+margin-left: 5px;
+}
   
-  .active:after {
-    content: "-"; /* Unicode character for "minus" sign (-) */
-    color:black;
-  }
+.active:after {
+content: "−"; /* Unicode character for "minus" sign (-) */
+color:black;
+}
 
 .accordion:hover::after {
-    color:black;
-  }
+color:black;
+}
+
+/*************About me*************/
 
 .section-intro-wrapper {
     width: 100%;
@@ -310,6 +262,8 @@ width: 100%;
     border-radius: 50%;
 }
 
+/*************Footer*************/
+
 footer {
     background-color: #83ffcd;
 }
@@ -324,6 +278,3 @@ footer {
 footer div {
     margin: 2% auto;
 }
-
-
-/*https://www.w3schools.com/howto/howto_js_accordion.asp*/

@@ -27,22 +27,18 @@
                         <li></li>
                     </ul>
                 </nav>
-                <div class="hero-text hero">
+                <div class="hero-text hero">                    
+                
+                    <h1>LX-UX-UI</h1>
                     <h1>Designer</h1>
-                    <h1>Educator</h1>
-                    <h1>Project-Founder</h1>
+                    <!--<h1>Educator</h1>
+                    <h1>Project-Founder</h1>-->
                 </div>
             </section>
             
             <section class="human">
                 <div class="manifesto">
-                    <div class="manifesto-wrapper">
-                        <!--<div class="manifesto-image">
-                            <img src="images/profile.jpg" alt="Image 1">
-                        </div>-->
-
-                        <div class="manifesto-card">
-                            <h2>Hi, I am <span class="accordion" style="border-bottom: 0.2em solid #83ffcd">Stephan</span>. 
+                            <h3>Hi, I am <span class="accordion" style="border-bottom: 0.2em solid #83ffcd">Stephan</span>. 
                                 <div class="panel">
                                         <section class="about-me">
                                                 <div class="section-intro">
@@ -67,7 +63,8 @@
                                                 </div>
                                         </section>
                                 </div>
-                            </h2> 
+                            </h3> 
+                            <h3>I believe in thouroughly understanding problems and in looking beyond the obvious.</h3>
                             <h3>I love to <span class="accordion" style="border-bottom: 0.2em solid #83ffcd">design things</span>,  
                                 <div class="panel">
                                         <section class="designer">
@@ -140,7 +137,7 @@
                                             </div>   
                                         </section>
                                 </div>
-                                especially engaging learning experiences and thought through UX/UI.</h3>
+                            especially engaging learning experiences and thought through UX/UI.</h3>
                             <h3>I also run a quirky <span class="accordion" style="border-bottom: 0.2em solid #83ffcd">side-project on creativity</span>
                                 <div class="panel">
                                         <section class="creativity">
@@ -273,32 +270,29 @@
                                         </section>  
                                 </div>
                             </h3>
-                            <h3>I believe in thouroughly understanding problems and in looking beyond the obvious.</h3>
                             <h3>Eventually, I care about doing good through my work.</h3>
-                        </div>
-                    </div>
                 </div>
             </section>
             
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
 
-            for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                /* Toggle between adding and removing the "active" class,
-                to highlight the button that controls the panel */
-                this.classList.toggle("active");
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
 
-                /* Toggle between hiding and showing the active panel */
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                panel.style.display = "none";
-                } else {
-                panel.style.display = "block";
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display = "block";
+                    }
+                });
                 }
-            });
-            }
         </script>
     <footer>
         <div>
