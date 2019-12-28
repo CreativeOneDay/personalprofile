@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
 }
   
 /*************Header*************/
-   .logo {
+.logo {
     color: #83ffcd;
 }
 
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
 /*************TOP*************/
 
 .top-nav {
-    max-width: 90%;
+    max-width: 80%;
     margin: 5% auto;
     display: flex;
     justify-content: space-between;
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
 }
 
 .top-nav h1 {
-    font-size: 1.2em;
+    font-size: 2em;
     color: #83ffcd;
 }
 
@@ -98,8 +98,29 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
 }
 
 .cv a, .cv a:hover, .cv a:active {
-    font-size: 1.2em;
+    font-size: 2em;
     color: #83ffcd;
+    text-decoration: none;
+}
+
+.section-intro .cv {
+    margin-top: 10%;
+    padding: 2% 5%;
+    border: solid 4px black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 black !important;
+    display: inline-block;
+    text-align: center;
+}
+
+.cv-container {
+    text-align: center;
+}
+
+.section-intro .cv a, .section-intro .cv a:hover, .section-intro .cv a:active {
+    font-size: 0.5em;
+    font-weight: 700;
+    color: black;
     text-decoration: none;
 }
 
@@ -110,27 +131,41 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
 }
 
 .manifesto {
-    max-width: 98%;
+    max-width: 80%;
     margin: 5% auto;
 }
 
 .manifesto h3 {
-    font-size: 5.5em;
+    font-size: 3em;
     font-family: 'Roboto Mono', monospace;
     font-weight: normal;
-    line-height: 140%;
+    line-height: 150%;
+    margin-bottom: 8%;
 }
 
 /*************General Sizes*************/
 .teaser p, .details p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-family: 'Roboto Mono', monospace;
     font-weight: normal;
     line-height: 150%;
 }
 
+.contact p {
+    font-size: 0.5em;
+}
+
+.list-header {
+    font-size: 0.5em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    line-height: 150%;
+    color: black;
+    text-transform: uppercase;
+}
+
 .teaser h3, .details h3 {
-    font-size: 1em;
+    font-size: 0.7em;
     font-family: 'Roboto Mono', monospace;
     font-weight: bolder;
     line-height: 150%;
@@ -147,10 +182,30 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
 
 .details li {
     font-family: 'Roboto Mono', monospace;
+    font-size: 0.5em;
+    font-weight: normal;
+    line-height: 150%;
 }
 
 .manifesto h3 {
-    margin: 2em;
+    margin: ;
+}
+
+.card-body h3 {
+    font-size: .7em;
+    font-weight: 700;
+}
+
+.card-body p {
+    font-size: .5em;
+}
+
+.panel, .section-intro-wrapper {
+    margin-bottom: 5%;
+}
+
+.accordion span {
+    line-height: 100%;
 }
 /*************cards*************/
 .designer, .education, .creativity, .about-me { /*This are the sections*/
@@ -168,8 +223,8 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
 .card {
     border: 0.1em solid #1f1f1f;
     flex: 0 1 46%;
-    margin: 12px; 
-    background:#1f1f1f;
+    margin: 4% 2%;
+    background: #1f1f1f;
     padding: 0 0 10px 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -230,7 +285,6 @@ min-height: 85vh;
 
 .skills p, .skills li {
     color: white;
-    font-size: 0.6em;
 }
 
 .panel ul {
@@ -243,7 +297,7 @@ min-height: 85vh;
 }
 
 .accordion:after {
-content: "  +"; /* Unicode character for "plus" sign (+) */
+content: "+"; /* Unicode character for "plus" sign (+) */
 width: 0.01em;
 height: 0.01em;
 color: #83ffcd;
@@ -253,7 +307,7 @@ margin-left: 5px;
 }
   
 .active:after {
-content: "  −"; /* Unicode character for "minus" sign (-) */
+content: "−"; /* Unicode character for "minus" sign (-) */
 color:black;
 }
 
@@ -277,6 +331,11 @@ color:black;
 }
 
 .cv p {
+    font-weight: bolder;
+    text-transform: uppercase !important;
+}
+
+.section-intro .cv p {
     font-weight: bolder;
     text-transform: uppercase !important;
 }
@@ -312,11 +371,11 @@ footer {
 }
 
 footer p {
-    margin: 10% auto 0;
+    margin: 0 auto 0;
 }
 
 footer p {
-    padding: 10% 10%;
+    padding: 2% 10%;
 }
 
 
@@ -401,7 +460,7 @@ footer div {
     }
 
     footer div {
-        margin: 2% 10% 0;
+        margin: 2% 10%;
     }
 
     .footer-text {
