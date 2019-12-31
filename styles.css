@@ -9,6 +9,10 @@ body {
     font-size: 62.5%;
 }
 
+a:link, a:visited {
+    color: blue;
+}
+
 h1, h2, h3, h4, h5, h6, p, caption, li, div {
     color: white;
     line-height: 150%;
@@ -80,7 +84,7 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
 }
 
 .top-nav h1 {
-    font-size: 2em;
+    font-size: 3em;
     color: #83ffcd;
 }
 
@@ -140,10 +144,15 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
     font-family: 'Roboto Mono', monospace;
     font-weight: normal;
     line-height: 150%;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
 }
 
 /*************General Sizes*************/
+
+.panel ul {
+    padding-left: 8%;
+}
+
 .teaser p, .details p {
     font-size: 0.7em;
     font-family: 'Roboto Mono', monospace;
@@ -303,9 +312,9 @@ height: 0.01em;
 color: #83ffcd;
 font-weight: bold;
 font-size: 0.8em;
-margin-left: 5px;
+margin-right: 5px;
 }
-  
+
 .active:after {
 content: "−"; /* Unicode character for "minus" sign (-) */
 color:black;
@@ -397,9 +406,29 @@ footer div {
     padding-bottom: 0.1em;
 }
 
-/*************Mobile*************/
+/*************Mobile 420px*************/
 
 @media (max-width: 420px) {
+
+
+    .top-nav {
+        max-width: 80%;
+        margin: 20% auto;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cv {
+        padding: 1% 2%;
+        border: solid 4px #83ffcd;
+        border-radius: 5px;
+        box-shadow: 4px 4px 0 #83ffcd !important;
+        text-align: center;
+        padding: 7%;
+        margin-top: 20%;
+    }
+
     .cards {
       flex-wrap: wrap;
       justify-content: center;
@@ -415,7 +444,7 @@ footer div {
         }
 
     .teaser, .skills {
-        width: 80%;
+        width: 100%;
         margin: 0 1%;
         justify-content: center;
         padding: 0 0 10px 0;
@@ -425,12 +454,64 @@ footer div {
         margin-bottom: 15%;
     }
 
-    .skills p, .skills li {
-        font-size: 0.8em !important;
+    .card-body p {
+        font-size: 1em;
     }
 
-    .teaser p {
-        font-size: 1em !important;
+    .cards .card {
+        flex: 0 1 92%;
+        margin: 8% 4%;
+    }
+
+    .details li {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1em;
+        font-weight: normal;
+        line-height: 150%;
+    }
+
+    .panel h3 {
+        font-size: 1.2em !important;
+        font-weight: bolder;
+    }
+
+
+    .teaser h3, .details h3 {
+        font-size: 1.2em;
+    } 
+
+    .teaser p, .details p {
+        font-size: 1em;
+    }
+
+    .list-header {
+        font-size: 0.8em;
+    }
+
+    .details ul {
+        padding-left: 10%;
+    }
+
+    .section-intro .cv {
+        margin-top: 10%;
+        padding: 2% 5%;
+        border: solid 0.2em black;
+        border-radius: 5px;
+        box-shadow: 0.2em 0.2em black !important;
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .manifesto h3 {
+        line-height: 140%;
+    }
+
+    .section-intro .cv a, .section-intro .cv a:hover, .section-intro .cv a:active {
+        font-size: 0.8em;
+        font-weight: 700;
+        color: black;
+        text-decoration: none;
     }
 
     .panel h3 {
@@ -460,7 +541,139 @@ footer div {
     }
 
     footer div {
-        margin: 2% 10%;
+        margin: 2% 10% 0%;
+    }
+
+    .footer-text {
+
+        font-size: 1em;
+    }
+}
+
+
+/*************Tablet 768px*************/
+
+@media (max-width: 768px) {
+
+    .teaser p, .details p {
+        font-size: 0.6em;
+    }
+
+    .details li {
+        font-size: 0.4em;
+    }
+
+    .cv {
+        padding: 2% 4%;
+        border: solid 4px #83ffcd;
+        border-radius: 5px;
+        box-shadow: 4px 4px 0 #83ffcd !important;
+        text-align: center;
+    }
+
+    .cards {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 15%;
+    }
+    .cards .card {
+        flex: 0 1 80%;    }
+
+    .card > header {
+        width: 100%;
+        max-height: 50% !important;
+        max-height: 50vh !important;
+        }
+
+
+
+    .panel {
+        margin-bottom: 15%;
+    }
+
+    .card-body p {
+        font-size: .6em;
+    }
+
+    .cards .card {
+        flex: 0 1 92%;
+        margin: 8% 4%;
+    }
+
+    .details li {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 0.4em;
+        font-weight: normal;
+        line-height: 150%;
+    }
+
+    .panel h3 {
+        font-size: .6em !important;
+        font-weight: bolder;
+    }
+
+
+    .teaser h3, .details h3 {
+        font-size: .8em;
+    } 
+
+    .teaser p, .details p {
+        font-size: 0.6em;
+    }
+
+    .list-header {
+        font-size: 0.4em;
+    }
+
+    .details ul {
+        padding-left: 10%;
+    }
+
+    .section-intro .cv {
+        margin-top: 10%;
+        padding: 4% 10%;
+        border: solid 0.1em black;
+        border-radius: 5px;
+        box-shadow: 0.1em 0.1em black !important;
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .manifesto h3 {
+        line-height: 150%;
+    }
+
+    .section-intro .cv a, .section-intro .cv a:hover, .section-intro .cv a:active {
+        font-size: 0.4em;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+
+    .section-intro h2 {
+        font-size: 1.2em !important;
+    }
+
+    .hero-text h1 {
+        font-size: 350%;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: 5% auto 0;
+    }
+
+    .manifesto h3 {
+        font-size: 2.6em;
+    }
+
+    .hero-text {
+        margin-top: 35%;
+    }
+
+    footer div {
+        margin: 2% 10% 0%;
     }
 
     .footer-text {
