@@ -21,91 +21,123 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
 .wrapper {
     width: 100%;
     margin: 2rem auto;
-    /*display: grid;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
-    */
     margin: 0 auto;
   }
 
- /*************Navigation*************/
- .main-nav {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin: 2% 5%;
+.big-image {
+    display: block !important;
+    max-width: 80% !important;
+    margin: 5% auto !important;
+}
+/*************Manifesto*************/
+
+.human {
+    width: 100%;
+    margin: 10% auto 0;
 }
 
-.main-nav ul {
-    display: grid; 
-    grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.main-nav ul li {
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-}
-
-.section-links li {
-    list-style-type: none;
-}
-  
-/*************Header*************/
-.logo {
-    color: #83ffcd;
-}
-
-.hero-text {
-    margin: 10% 4%;
-    text-align: center;
-    max-width: 90%
-}
-
-.header {
-  /*grid-area: header;*/
-  /*min-height: 100vh;*/
-}
-
-/*************TOP*************/
-
-.top-nav {
+.manifesto {
     max-width: 80%;
     margin: 5% auto;
+}
+
+.manifesto h3 {
+    font-size: 3.5em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    line-height: 150%;
+    margin-bottom: 5%;
+}
+
+/*************Footer*************/
+
+footer {
+    background-color: #83ffcd;
+}
+
+footer p {
+    font-size: 2em;
+    margin: 0 auto 0;
+    padding: 2% 0%;
+    color: black;
+}
+
+.endline {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.endline p {
+    text-align: center;
+}
+
+.footer-text {
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.collaborate, .bio {
+    margin: 2% 0;
+    width: ;
+}
+
+.bio div {
+    margin: 2% 0;
+}
+
+.footer-nav {
+    max-width: 80%;
+    margin: 2% auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.top-nav h1 {
+.footer-nav h1 {
     font-size: 3em;
-    color: #83ffcd;
+    color: black;
 }
 
-.top-nav button {
+.footer-nav button {
     width: 100%;
-    background-color: #83ffcd;
+    background-color: black;
     font-size: 1.5em;
+}
+
+
+.footer-cv {
+    margin-top: 10%;
+    padding: 10% 20%;
+    border: solid 4px black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 black !important;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-cv a, .footer-cv a:hover, .footer-cv a:active {
+    font-size: 2em;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
 }
 
 .cv {
     padding: 1% 2%;
-    border: solid 4px #83ffcd;
+    border: solid 4px black;
     border-radius: 5px;
-    box-shadow: 4px 4px 0 #83ffcd !important;
+    box-shadow: 4px 4px 0 black !important;
 }
 
 .cv a, .cv a:hover, .cv a:active {
     font-size: 2em;
-    color: #83ffcd;
+    color: black;
     text-decoration: none;
 }
+
+/*************About me*************/
 
 .section-intro .cv {
     margin-top: 10%;
@@ -126,25 +158,6 @@ h1, h2, h3, h4, h5, h6, p, caption, li, div {
     font-weight: 700;
     color: black;
     text-decoration: none;
-}
-
-/*************Manifesto*************/
-
-.human {
-    width: 100%;
-}
-
-.manifesto {
-    max-width: 80%;
-    margin: 5% auto;
-}
-
-.manifesto h3 {
-    font-size: 3em;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: normal;
-    line-height: 150%;
-    margin-bottom: 5%;
 }
 
 /*************General Sizes*************/
@@ -250,6 +263,13 @@ width: 100%;
     object-position: 0 0; /* positioned top left of the content box */
 }
 
+.card-body a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 0.1em solid white;
+    padding-bottom: 0.1em;
+}
+
 .read-more {
     text-align: center;
     display: block;
@@ -263,6 +283,69 @@ width: 100%;
     margin-top: 10%;
 }
 
+/*************cards portfolio*************/
+
+.portfolio-showcase {
+    margin-top: 10%;
+}
+.portfolio-showcase .designer, .portfolio-showcase .education, .portfolio-showcase .creativity { /*This are the sections*/
+    margin: 0 0 5% 0;   
+    max-width: 100%;
+}
+
+.portfolio-showcase .card-body p {
+    font-size: 1.8em;
+}
+
+.portfolio-showcase .card-body h3 {
+    font-size: 1.8em;
+}
+
+.portfolio-showcase h3 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+.portfolio-showcase .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 5%;
+ }
+ 
+.card {
+    border: 0.1em solid #1f1f1f;
+    flex: 0 1 31%;
+    margin: 4% 2% 4% 0%;
+    background: #1f1f1f;
+    padding: 0 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card > header {
+max-height: 50vh;
+width: 100%;
+}
+
+.card-hero img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover !important;
+    object-position: 0 0; /* positioned top left of the content box */
+}
+
+.read-more {
+    text-align: center;
+    display: block;
+}
+
+.card-body {
+    margin: 5% 5%;
+}
+
+.card h3 {
+    margin-top: 10%;
+}
 /*************Accordion*************/
 
 /*https://www.w3schools.com/howto/howto_js_accordion.asp*/
@@ -373,45 +456,206 @@ color:black;
     border-radius: 50%;
 }
 
-/*************Footer*************/
 
-footer {
-    background-color: #83ffcd;
+/*************Project*************/
+
+
+.section-links {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
 }
 
-footer p {
-    margin: 0 auto 0;
+.primary-navigation li:last-of-type {
+    margin-left: auto;
 }
 
-footer p {
-    padding: 2% 10%;
+.primary-navigation {
+    padding: 2% 0;
+    border-bottom: 0.1em solid rgb(30, 30, 30);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    z-index: 10;
+    transition: top 0.5s ease;
 }
 
+.primary-navigation ul {
+    list-style-type: none;
+    width: 80%;
+    margin: 0 10%;
+    overflow: hidden;
+    padding: 0;
+}
 
-.footer-text {
-    color: black;
+.primary-navigation li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 2.1em;
+    margin-right: 8%;
+}
+
+.primary-navigation a {
+    display: block;
+    color: white;
     text-align: center;
-    font-size: 2em;
-    font-family: 'Roboto Mono', monospace;
-}
-
-footer div {
-    margin: 2% auto 0;
-}
-
-.card-body a {
-    color: inherit;
     text-decoration: none;
-    border-bottom: 0.1em solid white;
-    padding-bottom: 0.1em;
+  }
+
+  header.sticky {
+      display: none;
+  }
+
+  header {
+      transition: display 300ms ease;
+  }
+
+.project-header {
+    padding: 0 0 2%;
+}
+.back-nav {
+    width: 80%;
+    margin: 10% auto 0;
 }
 
+.back-nav a {
+    margin-top: 0;
+    color: #83ffcd;
+    font-size: 2em;
+    text-decoration: none;
+    padding-bottom: 0.2em;
+    border-bottom: 0.1em solid #83ffcd;
+}
+
+.project-top-nav {
+    margin-bottom: 0;
+}
+
+.teaser-image-wrapper {
+    max-width: 80%;
+    margin: 40vh 10% 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.portfolio-images-wrapper {
+    max-width: 80%;
+    margin: 0 10%;
+}
+
+.portfolio-text .section-intro-wrapper {
+    margin-bottom: 0;
+}
+
+.portfolio-images-wrapper img {
+    object-fit: contain;
+    height: auto;
+    max-width: 100%;
+    line-height: 0;
+    margin: 5% 0;
+}
+
+.portfolio-images h3 {
+    font-size: 3em;
+    border-bottom: 0.15em solid white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 100%;
+    background-color: #83ffcd;
+    height: 50vh;
+    margin-top: 25vh;
+}
+
+
+.teaser-image-wrapper img {
+    padding: 0 !important;
+    object-fit: cover;
+    height: 75vh;
+    width: 100%;
+    line-height: 0;
+    position: relative;
+    margin-top: -25vh;
+}
+
+.more-height {
+
+}
+
+.teaser-image-wrapper {
+    padding: 0;
+}
+
+
+.portfolio-teaser h1 {
+    font-size: 4.8em;
+    line-height: 130%;
+    font-weight: 300;
+
+}
+
+.teaser-headline {
+    max-width: 60%;
+    margin: 0% 10%;
+    padding: 0;
+    line-height: 0;
+}
+
+.teaser-image-wrapper {
+    max-width: 80%;
+    margin: 5% 10%;
+    padding: 0;
+    line-height: 0;
+}
+
+.project h3, .project h4, .project p, .project li, .project a {
+    color: white;
+}
+
+.project h3 {
+    font-size: 3em;
+    border-bottom: 0.15em solid white;
+}
+
+.project h4 {
+    font-size: 1.6em;
+}
+
+.project p {
+    font-size: 2.1em;
+}
+
+.project li {
+    font-size: 1.6em; 
+}
+
+.portfolio {
+    max-width: 80%;
+    margin: 5% auto 0;
+}
+
+.project .teaser {
+    width: 62%;
+    margin: 0 4% 0 0%;
+    justify-content: space-around;
+    padding: 0 0 10px 0;
+}
+
+.project .skills {
+    width: 30%;
+    margin: 0 0% 0 4%;
+    justify-content: space-around;
+    padding: 0 0 10px 0;
+}
 /*************Mobile 420px*************/
 
 @media (max-width: 420px) {
 
 
-    .top-nav {
+    .footer-nav {
         max-width: 80%;
         margin: 20% auto;
         display: block;
@@ -421,9 +665,9 @@ footer div {
 
     .cv {
         padding: 1% 2%;
-        border: solid 4px #83ffcd;
+        border: solid 4px black;
         border-radius: 5px;
-        box-shadow: 4px 4px 0 #83ffcd !important;
+        box-shadow: 4px 4px 0 black;
         text-align: center;
         padding: 7%;
         margin-top: 20%;

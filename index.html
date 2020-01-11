@@ -21,24 +21,25 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
             <section class="cell header">
-                <!--
-                <nav class="main-nav hero">
-                    <h2 class="logo">Stephan Kardos</h2>
-                    <ul class="section-links">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </nav>
-                -->
-                <div class="top-nav">
-                        <div>
-                                <h1>Stephan Kardos</h1>
-                        </div>
-                        <div class="cv">
-                            <a href="./stephankardos_cv.pdf" download="Stephan Kardos CV">Download CV</a>
-                        </div>
-                </div>
+                
+                    <header>
+                            <nav class="primary-navigation" id="navbar">
+                                <ul class="section-links">
+                                    <li><a href="index.html">Stephan Kardos</a></li>
+                                    <li><a href="portfolio.html">Portfolio/Work</a></li>
+                                    <li><a href="bio.html">Let's work together</a></li>
+                                </ul>
+                            </nav>
+                            </header>
+                            
+                            <!--<div class="project-top-nav top-nav">
+                                    <div>
+                                            <h1>Stephan Kardos</h1>
+                                    </div>
+                                    <div class="cv">
+                                        <a href="./stephankardos_cv.pdf" download="Stephan Kardos CV">Download CV</a>
+                                    </div>
+                            </div>-->
               
             </section>
             
@@ -161,7 +162,7 @@
                                                                     <h3>Creative You!</h3>
                                                                     <p>This is an app, that is based on my Creativity Canvas.</p>
                                                                     <p>It allows users to explore, understand and design their creativity by answering prompts and building their creativity model.</p>
-                                                                    <p class="read-more"></p>
+                                                                    <p class="read-more"><a href="project1.html">Read More</a></p>
                                                                 </div>
                                                              </article>
 
@@ -173,7 +174,7 @@
                                                                 <h3>Joia</h3>
                                                                 <p>Concept design for an ecommerce solution for a local art store.</p>
                                                                 <p>The focus was to integrate an ecommerce solution that doesn't feel like one and that reflects the artsy character of the store.</p>
-                                                                <p class="read-more"></p>
+                                                                <p class="read-more"><a href="">Read More</a></p>
                                                             </div>
                                                          </article>
                             
@@ -185,7 +186,7 @@
                                                                 <h3>We spot Sintra</h3>
                                                                 <p>Website design for an existing climbing event (exercise).</p>
                                                                 <p>The website design informs and motivates interesting climbers to join the event and doubles as map for boulders during the event.</p>
-                                                                <p class="read-more"></p>
+                                                                <p class="read-more"><a href="">Read More</a></p>
                                                             </div>
                                                         </article>
                             
@@ -197,7 +198,7 @@
                                                                 <h3>Guitar app</h3>
                                                                 <p>Ideation and design of a feature for an existing guitar app (exercise).</p>
                                                                 <p>This app feature builds on an existing guitar app and allows users to book a tutor through the app after ceertain exercises.</p>
-                                                                <p class="read-more"></p>
+                                                                <p class="read-more"><a href="">Read More</a></p>
                                                             </div>
                                                         </article>                                       
                                             </div>  
@@ -392,8 +393,23 @@
             </section>
 
             <footer>
-                    <div>
-                        <p class="footer-text">Say hello on <a href="https://www.linkedin.com/in/stephan-kardos/?locale=en_US" target="_blank">LinkedIn</a> or via <a href = "mailto: hello@creativitygym.at">E-Mail.</a></div>
+                     <div class="footer-nav">
+                        <div class="collaborate">
+                            <h1>Let's work together!</h1>
+                            <p>Send ma an e-mail to: <a href = "mailto: hello@creativitygym.at">hello@creativitygym.at</a></p>
+                            <p>Reach out on LinkedIn: <a href="https://www.linkedin.com/in/stephan-kardos/?locale=en_US" target="_blank">Profile</a></p>
+                        </div>
+
+                        <div class="bio">
+                            <h1>My onepager CV</h1> 
+                            <div class="footer-cv">
+                                <a href="./stephankardos_cv.pdf" download="Stephan Kardos CV">Download CV</a>
+                            </div>
+                         </div>
+                    </div>
+
+                    <div class="endline">
+                        <p>Website made by me with brain, heart and magic.</p>
                     </div>
             </footer>
         </div>
@@ -432,6 +448,34 @@
                 panel.style.display ='block';
                 }
             }
+        </script>
+        <script>
+            window.addEventListener("scroll", checkHeader);
+            var checkHeader = _.throttle(() =>
+                {
+
+                }, 300);
+
+            let scrollPosition = Math.round(window.scollY);
+
+            if (scrollPosition > 500) {
+                document.querySelector("header").classList.add("sticky");
+            } else {
+                document.querySelector("header").classList.remove("sticky");
+            }
+        </script>
+        <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                    var currentScrollPos = window.pageYOffset;
+
+                    if (prevScrollpos > currentScrollPos) {
+                        document.getElementById("navbar").style.top = "0";
+                    } else {
+                        document.getElementById("navbar").style.top = "-15%";
+                    }
+                    prevScrollpos = currentScrollPos;
+                }
         </script>
 
     </body>
