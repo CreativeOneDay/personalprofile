@@ -21,16 +21,30 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
             <section class="cell header">
-                
                     <header>
-                            <nav class="primary-navigation" id="navbar">
-                                <ul class="section-links">
-                                    <li><a href="index.html">Stephan Kardos</a></li>
-                                    <li><a href="portfolio.html">Portfolio/Work</a></li>
-                                    <li><a href="bio.html">Bio</a></li>
+                        <nav role="mobile-navigation" class="mobile-navigation">
+                            <div id="menuToggle">
+                                <input type="checkbox" />
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                <ul id="menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="portfolio.html">Work</a></li>
+                                    <li><a href="#work">Let's work together</a></li>
                                 </ul>
-                            </nav>
-                            </header>
+                            </div>
+                        </nav>
+                    
+                        
+                        <nav class="primary-navigation" id="navbar">
+                            <ul class="section-links">
+                                <li><a href="index.html">Stephan Kardos</a></li>
+                                <li><a href="portfolio.html">Portfolio/Work</a></li>
+                                <li><a href="#work">Let's work together</a></li>
+                            </ul>
+                        </nav>
+                    </header>
                             
                             <!--<div class="project-top-nav top-nav">
                                     <div>
@@ -54,7 +68,7 @@
                                                         <img class="image2 card-image" src="images/creativityapp.png" alt="Sintra Subsite">
                                                     </header>
                                                     <div class="card-body">
-                                                        <h3>Creative You!</h3>
+                                                        <h3><a href="project1.html">Creative You!</a></h3>
                                                         <p>This is an app, that is based on my Creativity Canvas (exercise).</p>
                                                         <p class="read-more"><a href="project1.html">Read More</a></p>
                                                     </div>
@@ -65,7 +79,7 @@
                                                     <img class="image2 card-image" src="images/joia.png" alt="Sintra Subsite">
                                                 </header>
                                                 <div class="card-body">
-                                                    <h3>Joia</h3>
+                                                    <h3><a href="project2.html">Joia</a></h3>
                                                     <p>Concept design for an ecommerce solution for a local art store (exercise).</p>
                                                     <p class="read-more"><a href="project2.html">Read More</a></p>
                                                 </div>
@@ -76,13 +90,13 @@
                                                     <img class="image2 card-image" src="images/sintra@2x.png" alt="Sintra Subsite">
                                                 </header>
                                                 <div class="card-body">
-                                                    <h3>We spot Sintra</h3>
+                                                    <h3><a href="project3.html">We spot Sintra</a></h3>
                                                     <p>Website design for an existing climbing event (exercise).</p>
                                                     <p class="read-more"><a href="project3.html">Read More</a></p>
                                                 </div>
                                             </article>
                 
-                                            <article class="card">
+                                            <!--<article class="card">
                                                 <header class="card-hero">
                                                     <img class="image2 card-image" src="images/guitar4.svg" alt="Sintra Subsite">
                                                 </header>
@@ -91,7 +105,7 @@
                                                     <p>Ideation and design of a feature for an existing guitar app (exercise).</p>
                                                     <p class="read-more"><a href="">Read More</a></p>
                                                 </div>
-                                            </article>                                       
+                                            </article>-->                                 
                                 </div>  
                             </section>
 
@@ -103,9 +117,9 @@
                                             <img class="image2 card-image" src="images/svg/Gym.svg" alt="Sintra Subsite">
                                         </header>
                                         <div class="card-body">
-                                            <h3><a href="https://www.creativitygym.at/ target=_blank">The Creativity Gym</a></h3>
+                                            <h3><a href="https://www.creativitygym.at/" target="_blank">The Creativity Gym</a></h3>
                                             <p>This is my side-project to explore the topic of creativity through various tools, events and formats.</p>
-                                            <p class="read-more"><a href="https://www.creativitygym.at/ target=_blank">Read more</a></p>
+                                            <p class="read-more"><a href="https://www.creativitygym.at/" target="_blank">Read more</a></p>
                                         </div>
                                     </article>
 
@@ -114,10 +128,10 @@
                                                         <img class="image2 card-image" src="images/svg/Canvas.svg" alt="Sintra Subsite">
                                                     </header>
                                                     <div class="card-body">
-                                                        <h3><a href="https://www.creativitygym.at/the-creativity-canvas target=_blank">The Creativity Canvas</a></h3>
+                                                        <h3><a href="https://www.creativitygym.at/the-creativity-canvas" target="_blank">The Creativity Canvas</a></h3>
                                                         <p>Conceptual framework to facilitate the understanding and discussion of personal and team creativity.</p>
                                                         <p>Currently under further development.</p>
-                                                        <p class="read-more"><a href="https://www.creativitygym.at/the-creativity-canvas target=_blank">Read more</a></p>
+                                                        <p class="read-more"><a href="https://www.creativitygym.at/the-creativity-canvas" target="_blank">Read more</a></p>
                                                     </div>
                                     </article>
             
@@ -126,9 +140,9 @@
                                             <img class="image2 card-image" src="images/prism.png" alt="Sintra Subsite">
                                         </header>
                                         <div class="card-body">
-                                            <h3><a href="https://www.creativitygym.at/creativeprismCreative target=_blank">Creative Prism</a> </h3>
+                                            <h3><a href="https://www.creativitygym.at/creativeprismCreative" target="_blank">Creative Prism</a> </h3>
                                             <p>Quarterly talk series on creativity by hand-selected inspiring minds.</p>
-                                            <p class="read-more"><a href="https://www.creativitygym.at/creativeprismCreative target=_blank">Read more</a></p>
+                                            <p class="read-more"><a href="https://www.creativitygym.at/creativeprismCreative" target="_blank">Read more</a></p>
                                         </div>
                                     </article>
                                 </div>       
@@ -176,11 +190,26 @@
                 </div>
             </section>
 
+            <a name="work"></a>
+
             <footer>
+                    
                     <div>
-                        <p class="footer-text">Say hello on <a href="https://www.linkedin.com/in/stephan-kardos/?locale=en_US" target="_blank">LinkedIn</a> or via <a href = "mailto: hello@creativitygym.at">E-Mail.</a></div>
+                            <h1 class="footer-header">Let's work together!</h1>
+                             </div>                    
+
+                    <div class="footer-container">
+                        <div class="footer-contact">
+                            <p class="footer-text">Say hello on <a href="https://www.linkedin.com/in/stephan-kardos/?locale=en_US" target="_blank">LinkedIn</a> or via <a href = "mailto: hello@creativitygym.at">E-Mail.</a></p>
+                        </div>
+    
+                        <div class="footer-cv">
+                            <p><a href="./stephankardos_cv.pdf" download="Stephan Kardos CV">Download CV</a></p>
+                        </div>
                     </div>
-            </footer>
+                    <div class="made-by"><p>Made with 🧠 & ♥️ on 🌍</p></div>
+
+                </footer>
         </div>
 
         <script>
