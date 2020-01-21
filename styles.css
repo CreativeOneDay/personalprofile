@@ -1160,6 +1160,11 @@ color:black;
 
 @media (max-width:1200px) and (min-width:421px) {
 
+    .project h3 {
+        font-size: 3em;
+        border-bottom: 0.1em solid white;
+    }
+
 
     .primary-navigation {
         display: none !important;
@@ -1224,7 +1229,7 @@ color:black;
 
     .details li {
         font-family: 'Roboto Mono', monospace;
-        font-size: 1em;
+        font-size: 1.4em;
         font-weight: normal;
         line-height: 150%;
     }
@@ -1252,7 +1257,7 @@ color:black;
     } 
 
     .teaser p, .details p {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 
     .list-header {
@@ -1274,7 +1279,7 @@ color:black;
     }
 
     .column h3 {
-        font-size: 1em !important;
+        font-size: 2em !important;
         font-weight: 700;
     }
 
