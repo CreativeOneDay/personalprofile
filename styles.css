@@ -192,10 +192,6 @@ footer {
     line-height: 150%;
 }
 
-.manifesto h3 {
-    margin: ;
-}
-
 .card-body h3 {
     font-size: .7em;
     font-weight: 700;
@@ -261,6 +257,7 @@ width: 100%;
 .card-body {
     margin: 5% 5%;
 }
+
 
 .card h3 {
     margin-top: 10%;
@@ -342,7 +339,6 @@ width: 100%;
     font-weight: 400;
 }
 
-
 .read-more {
     text-align: center;
     display: block;
@@ -353,7 +349,7 @@ width: 100%;
 }
 
 .card h3 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 /*************Accordion*************/
 
@@ -668,6 +664,23 @@ color:black;
 /*************Mobile 420px*************/
 
 @media (max-width: 420px) {
+
+    .portfolio-teaser h1 {
+        font-size: 3em;
+        line-height: 150%;
+        font-weight: 300;
+    }
+
+    .project .skills, .project .teaser {
+        width: 100%;
+        padding: 0 0 10px 0;
+        margin: 0;
+    }
+
+    .footer-cv {    
+        margin: 20% auto 5%;
+        width: 100%;
+    }
    
     .mobile-navigation {
     display: block;
@@ -813,6 +826,11 @@ color:black;
 
 @media (max-width: 420px) {
 
+    .project-header {
+        padding: 0 0 2%;
+        margin-top: 25%;
+    }
+
     .primary-navigation {
         display: none;
     }
@@ -845,15 +863,6 @@ color:black;
       margin-bottom: 15%;
     }
 
-    .card-body {
-        position: relative;
-    }
-    
-    .read-more {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
     .cards .card {
         flex: 0 1 80%;    }
 
@@ -885,7 +894,7 @@ color:black;
 
     .details li {
         font-family: 'Roboto Mono', monospace;
-        font-size: 1em;
+        font-size: 1.4em;
         font-weight: normal;
         line-height: 150%;
     }
@@ -913,7 +922,7 @@ color:black;
     } 
 
     .teaser p, .details p {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 
     .list-header {
@@ -989,7 +998,7 @@ color:black;
     .made-by p {
         color: black;
         font-size: 2em;
-        padding: 15% 0 5%;
+        padding: 5% 0 5%;
         text-align: center;
         margin: 0 !important;
     }
@@ -1149,7 +1158,7 @@ color:black;
       }
 }
 
-@media (max-width: 1200px) {
+@media (max-width:1200px) and (min-width:421px) {
 
 
     .primary-navigation {
